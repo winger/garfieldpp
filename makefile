@@ -176,6 +176,11 @@ $(OBJDIR)/ComponentCST.o: \
 	$(SRCDIR)/ComponentFieldMap.cc $(INCDIR)/ComponentFieldMap.hh 
 	@echo $@
 	@$(CXX) $(CFLAGS) $< -o $@
+$(OBJDIR)/ComponentComsol.o: \
+	$(SRCDIR)/ComponentComsol.cc $(INCDIR)/ComponentComsol.hh \
+	$(SRCDIR)/ComponentFieldMap.cc $(INCDIR)/ComponentFieldMap.hh 
+	@echo $@
+	@$(CXX) $(CFLAGS) $< -o $@
 $(OBJDIR)/ComponentElmer.o: \
 	$(SRCDIR)/ComponentElmer.cc $(INCDIR)/ComponentElmer.hh \
 	$(SRCDIR)/ComponentFieldMap.cc $(INCDIR)/ComponentFieldMap.hh 
